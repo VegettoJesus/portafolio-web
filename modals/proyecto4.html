@@ -1,0 +1,66 @@
+<!-- Modal: Caso de Estudio Proyecto 4 -->
+<div class="modal fade" id="modalProyecto4" tabindex="-1" aria-labelledby="modalProyecto4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg">
+            
+            <div class="modal-header text-white border-0 py-3" style="background: linear-gradient(135deg, #8b5cf6, #3b82f6);">
+                <div>
+                    <h5 class="modal-title fw-bold mb-1" id="modalProyecto4Label">Análisis de Sentimientos en Twitter (NLP)</h5>
+                    <small class="text-white opacity-75">Python · NLTK · Scikit-Learn · Google Colab</small>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body p-4">
+    
+                <div class="mb-5">
+                    <h5 class="fw-bold text-dark mb-3"><i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>El Reto</h5>
+                    <p class="text-secondary mb-3">Las empresas de videojuegos y tecnología reciben miles de menciones diarias en redes sociales. El desafío era claro:</p>
+                    <ul class="text-secondary">
+                        <li><strong>Monitoreo manual imposible:</strong> Leer tweet por tweet para saber si la gente está feliz o enojada con una marca no escala.</li>
+                        <li><strong>Crisis de reputación:</strong> Las quejas en Twitter se vuelven virales en minutos; las empresas necesitan detectar la negatividad en tiempo real.</li>
+                        <li><strong>Ruido en los datos:</strong> Los tweets contienen spam, errores ortográficos y textos sin sentido que ensucian cualquier análisis simple.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-5">
+                    <h5 class="fw-bold text-dark mb-3"><i class="bi bi-lightbulb-fill text-warning me-2"></i>La Solución</h5>
+                    <p class="text-secondary mb-3">Construí un pipeline completo de Procesamiento de Lenguaje Natural (NLP) para limpiar, analizar y predecir el sentimiento de los usuarios.</p>
+                    
+                    <div class="mb-4 text-center">
+                        <img src="assets/img/projects/nlp-bigramas.png" class="img-fluid w-100 rounded shadow-sm border" alt="Análisis de Bigramas Negativos">
+                        <p class="text-muted small mt-2 mb-0">Top 10 quejas más frecuentes (Bigramas negativos): detectando problemas de reputación como "please fix".</p>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded h-100">
+                                <h6 class="fw-bold text-primary mb-2"><i class="bi bi-filter-circle me-2"></i>Preprocesamiento NLP</h6>
+                                <p class="small text-secondary mb-0">Apliqué tokenización, eliminación de <em>stopwords</em> (palabras vacías) y lematización con <strong>NLTK</strong> para quedarme solo con las palabras que aportan significado (ej. "fix", "love").</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded h-100">
+                                <h6 class="fw-bold text-primary mb-2"><i class="bi bi-robot me-2"></i>Clasificador Logístico</h6>
+                                <p class="small text-secondary mb-0">Vectoricé el texto con <strong>TF-IDF</strong> (uni y bi-gramas) y entrené una Regresión Logística Multiclase para clasificar en 4 categorías: Positivo, Negativo, Neutral e Irrelevante.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-4 text-center">
+                        <img src="assets/img/projects/nlp-prediccion.png" class="img-fluid w-100 rounded shadow-sm border" alt="Predicción de Sentimiento">
+                        <p class="text-muted small mt-2 mb-0">Simulador en vivo: Predicción de probabilidades para el tweet "Fortnite is the best game ever!".</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-footer border-0 bg-light justify-content-between">
+                <span class="small text-muted d-none d-sm-block"></span>
+                <div>
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-3" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="https://colab.research.google.com/drive/12YTjN3jbjdoGztGYWi04WmQDbWsh6Cn1?usp=sharing" target="_blank" class="btn btn-dark rounded-pill px-3 ms-2"><i class="bi bi-google me-1"></i> Abrir Notebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

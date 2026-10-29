@@ -1,0 +1,113 @@
+<!-- Modal: Caso de Estudio Proyecto 7 (E-Commerce) -->
+<div class="modal fade" id="modalProyecto7" tabindex="-1" aria-labelledby="modalProyecto7Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg">
+            
+            <div class="modal-header text-white border-0 py-3" style="background: linear-gradient(135deg, #1e293b, #0f172a);">
+                <div>
+                    <h5 class="modal-title fw-bold mb-1" id="modalProyecto7Label">E-Commerce Platform & Admin Panel</h5>
+                    <small class="text-white opacity-75">Laravel 8 · MySQL · Bootstrap 5 · jQuery · Arquitectura MVC</small>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body p-4">
+    
+                <div class="mb-5">
+                    <h5 class="fw-bold text-dark mb-3"><i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>El Reto</h5>
+                    <p class="text-secondary mb-3">Desarrollar un sistema de comercio electrónico "todo en uno" para una tienda de tecnología, con las siguientes complejidades:</p>
+                    <ul class="text-secondary">
+                        <li><strong>Inventario Complejo:</strong> Manejar productos simples, con variaciones (talla/color) y agrupados, sin que el stock se descuadre.</li>
+                        <li><strong>Seguridad y Permisos:</strong> Diferentes roles (Admin, Vendedor, Cliente) con permisos granulares sobre cada menú y acción del sistema.</li>
+                        <li><strong>Flujo de Compra:</strong> Carrito que reserva stock real, cálculo dinámico de envíos y múltiples métodos de pago (Transferencia, QR, Contra entrega).</li>
+                        <li><strong>Auditoría:</strong> Registrar quién hizo qué, cuándo y desde qué IP.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-5">
+                    <h5 class="fw-bold text-dark mb-3"><i class="bi bi-lightbulb-fill text-warning me-2"></i>La Solución</h5>
+                    <p class="text-secondary mb-3">Construí un ecosistema robusto en Laravel, separando la lógica en Servicios, Traits de auditoría y Helpers de configuración.</p>
+                    
+                    <div id="carouselProyecto8" class="carousel slide mb-4 shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselProyecto8" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#carouselProyecto8" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carouselProyecto8" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#carouselProyecto8" data-bs-slide-to="3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/projects/ecommerce-tienda.png" class="d-block w-100 modal-img" alt="Tienda Frontend">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+                                    <p class="mb-0 small">Vista principal de la tienda con filtros por categoría y buscador AJAX</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/ecommerce-admin.png" class="d-block w-100 modal-img" alt="Panel Admin Catálogo">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+                                    <p class="mb-0 small">Gestión de productos</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/ecommerce-checkout.png" class="d-block w-100 modal-img" alt="Checkout">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+                                    <p class="mb-0 small">Visualización del checkout</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/ecommerce-ventas.png" class="d-block w-100 modal-img" alt="Gestión de Ventas">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+                                    <p class="mb-0 small">Listado de pedidos con estados</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto8" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto8" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded h-100">
+                                <h6 class="fw-bold text-danger mb-2"><i class="bi bi-diagram-3 me-2"></i>Variaciones Cartesianas</h6>
+                                <p class="small text-secondary mb-0">Lógica avanzada para crear combinaciones automáticas de atributos (ej. Color: Rojo, Talla: M) generando SKUs, precios y stock individuales para cada variación.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded h-100">
+                                <h6 class="fw-bold text-danger mb-2"><i class="bi bi-cart-check me-2"></i>Carrito con Reserva</h6>
+                                <p class="small text-secondary mb-0">Al agregar un producto al carrito, el sistema bloquea el stock temporalmente en base de datos para evitar sobreventas mientras el cliente finaliza la compra.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded h-100">
+                                <h6 class="fw-bold text-danger mb-2"><i class="bi bi-shield-lock me-2"></i>Sistema de Permisos</h6>
+                                <p class="small text-secondary mb-0">Menús dinámicos jerárquicos con permisos por rol (JSON) almacenados en caché por usuario. Validación estricta en cada controlador.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded h-100">
+                                <h6 class="fw-bold text-danger mb-2"><i class="bi bi-journal-text me-2"></i>Auditoría Completa</h6>
+                                <p class="small text-secondary mb-0">Implementación de un Trait que registra cada acción (Crear, Editar, Eliminar) guardando valores anteriores, nuevos, IP y navegador para trazabilidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-footer border-0 bg-light justify-content-between flex-column flex-sm-row gap-2">
+                <span class="small text-muted d-none d-sm-block"></span>
+                <div>
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-3 mb-0" data-bs-dismiss="modal">Cerrar</button>
+                    
+                    <a href="https://github.com/VegettoJesus/pedidos_productos" target="_blank" class="btn btn-dark rounded-pill px-3 ms-2 mb-0"><i class="bi bi-github me-1"></i> Ver Código</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

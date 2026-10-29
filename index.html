@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Leon | Full Stack Developer</title>
+    <meta name="description" content="Portafolio de Christian Jesus Leon Angulo, Ingeniero de Sistemas y Desarrollador Full Stack especializado en PHP, Laravel y JavaScript.">
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Devicon (Iconos de tecnologías) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Tu CSS compilado -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Portafolio</a>
+            
+            <div class="d-flex align-items-center order-lg-3 ms-auto ms-lg-3">
+                <button id="themeToggle" class="btn btn-link text-decoration-none text-secondary px-2" aria-label="Cambiar tema">
+                    <i class="bi bi-moon-stars-fill fs-5" id="themeIcon"></i>
+                </button>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item ms-lg-4 mt-2 mt-lg-0">
+                        <a class="btn btn-primary rounded-pill px-4 w-100" href="#contact">Hablemos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center" id="home">
+        <!-- Fondo Tecnológico -->
+        <div class="hero-bg-shapes">
+            <div class="tech-grid"></div> <!-- Cuadrícula de fondo -->
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            
+            <!-- Símbolos flotantes de sistemas/código -->
+            <div class="tech-symbol symbol-1">{ }</div>
+            <div class="tech-symbol symbol-2">&lt;/&gt;</div>
+            <div class="tech-symbol symbol-3">[ ]</div>
+            <div class="tech-symbol symbol-4">0101</div>
+            <div class="tech-symbol symbol-5">$ sudo</div>
+        </div>
+        
+        <div class="container position-relative z-1 pt-5">
+            <div class="row align-items-center min-vh-100 py-5">
+                <div class="col-lg-7 text-center text-lg-start mb-5 mb-lg-0">
+                    <span class="badge badge-soft-primary mb-4 px-3 py-2 rounded-pill fw-medium shadow-sm">
+                        <i class="bi bi-circle-fill me-2 text-success" style="font-size: 8px; vertical-align: middle;"></i>Disponible para trabajar
+                    </span>
+                    <h1 class="display-3 fw-bold mb-3 lh-sm">Hola, soy <br><span class="text-gradient">Christian Leon</span></h1>
+                    <h2 class="h4 text-secondary mb-4 fw-medium">Full Stack Developer & Ing. de Sistemas</h2>
+                    <p class="lead text-secondary mb-5 fs-6">Especializado en crear soluciones web escalables con PHP, Laravel y JavaScript. Apasionado por la calidad del software y la seguridad de la información.</p>
+                    
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mb-4">
+                        <a href="#projects" class="btn btn-primary btn-lg rounded-pill px-4 shadow-sm">Ver Proyectos</a>
+                        <a href="assets/CV_Christian_Leon.pdf" download class="btn btn-outline-dark btn-lg rounded-pill px-4">
+                            <i class="bi bi-download me-2"></i> Descargar CV
+                        </a>
+                    </div>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start mt-2">
+                        <a href="https://github.com/VegettoJesus" target="_blank" class="social-icon"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tu-perfil-aqui/" target="_blank" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="mailto:jesusleonangulo@hotmail.com" class="social-icon"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="hero-img-wrapper">
+                        <img src="assets/img/profile-photo.jpg" alt="Christian Leon" class="img-fluid hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="about" class="section-padding bg-light fade-in-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <h2 class="section-title text-center mb-4">Sobre mí</h2>
+                    <p class="lead mb-4 text-dark">Soy Bachiller en Ingeniería de Sistemas Computacionales por la Universidad Privada del Norte (UPN). Mi propósito es contribuir de manera efectiva al éxito de la empresa aportando soluciones tecnológicas escalables y mantenibles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="section-padding fade-in-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Habilidades Técnicas</h2>
+            <div class="row g-4 mb-5">
+                <!-- Tarjeta 1: Lenguajes -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card skill-card h-100 border-0 shadow-sm p-4">
+                        <div class="icon-box mb-3 mx-auto"><i class="bi bi-code-slash fs-2 text-primary"></i></div>
+                        <h5 class="card-title fw-bold mb-4 text-center">Lenguajes</h5>
+                        <ul class="list-unstyled text-secondary mb-0 skill-list mx-auto">
+                            <li><i class="devicon-php-plain colored"></i> PHP</li>
+                            <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+                            <li><i class="devicon-python-plain colored"></i> Python</li>
+                            <li><i class="devicon-csharp-plain colored"></i> C#</li>
+                            <li><i class="devicon-java-plain colored"></i> Java</li>
+                            <li><i class="devicon-cplusplus-plain colored"></i> C++</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Frameworks -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card skill-card h-100 border-0 shadow-sm p-4">
+                        <div class="icon-box mb-3 mx-auto"><i class="bi bi-layers fs-2 text-primary"></i></div>
+                        <h5 class="card-title fw-bold mb-4 text-center">Frameworks</h5>
+                        <ul class="list-unstyled text-secondary mb-0 skill-list mx-auto">
+                            <li><i class="devicon-laravel-plain colored"></i> Laravel 8</li>
+                            <li><i class="devicon-codeigniter-plain colored"></i> CodeIgniter 4</li>
+                            <li><i class="devicon-spring-plain colored"></i> Spring Boot</li>
+                            <li><i class="devicon-react-original colored"></i> React JS</li>
+                            <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap 5</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Bases de Datos -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card skill-card h-100 border-0 shadow-sm p-4">
+                        <div class="icon-box mb-3 mx-auto"><i class="bi bi-database fs-2 text-primary"></i></div>
+                        <h5 class="card-title fw-bold mb-4 text-center">Bases de Datos</h5>
+                        <ul class="list-unstyled text-secondary mb-0 skill-list mx-auto">
+                            <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+                            <li><i class="devicon-microsoftsqlserver-plain colored"></i> SQL Server</li>
+                            <li><i class="devicon-oracle-original colored"></i> Oracle</li>
+                            <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: Herramientas -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card skill-card h-100 border-0 shadow-sm p-4">
+                        <div class="icon-box mb-3 mx-auto"><i class="bi bi-tools fs-2 text-primary"></i></div>
+                        <h5 class="card-title fw-bold mb-4 text-center">Herramientas</h5>
+                        <ul class="list-unstyled text-secondary mb-0 skill-list mx-auto">
+                            <li><i class="devicon-git-plain colored"></i> Git</li>
+                            <li><i class="devicon-github-original github-icon"></i> GitHub</li>
+                            <li><i class="bi bi-hdd-network text-primary"></i> APIs REST</li>
+                            <li><i class="bi bi-shield-check text-success"></i> ISO 27001 / 9001</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <h4 class="fw-bold mb-4">Habilidades Blandas</h4>
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                        <span class="badge bg-white text-dark shadow-sm border px-3 py-2 fs-6 rounded-pill"><i class="bi bi-check2-circle text-primary me-2"></i>Responsabilidad</span>
+                        <span class="badge bg-white text-dark shadow-sm border px-3 py-2 fs-6 rounded-pill"><i class="bi bi-check2-circle text-primary me-2"></i>Puntualidad</span>
+                        <span class="badge bg-white text-dark shadow-sm border px-3 py-2 fs-6 rounded-pill"><i class="bi bi-check2-circle text-primary me-2"></i>Empatía</span>
+                        <span class="badge bg-white text-dark shadow-sm border px-3 py-2 fs-6 rounded-pill"><i class="bi bi-check2-circle text-primary me-2"></i>Solidaridad</span>
+                        <span class="badge bg-white text-dark shadow-sm border px-3 py-2 fs-6 rounded-pill"><i class="bi bi-check2-circle text-primary me-2"></i>Trabajo en equipo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia y Educación -->
+    <section id="experience" class="section-padding bg-light fade-in-section">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Experiencia Laboral -->
+                <div class="col-lg-7">
+                    <h2 class="section-title mb-5">Experiencia Laboral</h2>
+                    <div class="modern-timeline">
+                        <!-- Trabajo 1: Arzobispo Loayza -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card border-0 shadow-sm p-4 mb-4">
+                                <div class="d-flex justify-content-between align-items-start mb-2 flex-wrap">
+                                    <div>
+                                        <h5 class="fw-bold mb-1">FullStack Developer</h5>
+                                        <p class="text-primary fw-medium mb-0">Corporación Arzobispo Loayza</p>
+                                    </div>
+                                    <span class="badge bg-success bg-opacity-10 text-success border border-success rounded-pill px-3 py-2 mt-2 mt-sm-0">
+                                        <i class="bi bi-circle-fill me-1" style="font-size: 8px;"></i> Ene 2024 - Actualidad
+                                    </span>
+                                </div>
+                                
+                                <ul class="text-secondary mt-3 mb-3" style="padding-left: 1.2rem;">
+                                    <li class="mb-2">Desarrollo y mantenimiento de la Intranet Académica IAL, liderando la migración de CodeIgniter a Laravel 8 y optimizando la arquitectura para un mejor rendimiento.</li>
+                                    <li class="mb-2">Rediseño e implementación del módulo de Egresos, mejorando los estándares de seguridad y agilizando la gestión documental del área de Egresos.</li>
+                                    <li>Gestión de bases de datos MySQL/SQL Server y soporte a sistemas internos que empleaban CodeIgneiter y Laravel.</li>
+                                </ul>
+
+                                <!-- Etiquetas de Tecnologías -->
+                                <div class="d-flex flex-wrap gap-2 mt-3">
+                                    <span class="tech-badge">PHP</span>
+                                    <span class="tech-badge">Laravel 8</span>
+                                    <span class="tech-badge">CodeIgniter 4</span>
+                                    <span class="tech-badge">SQL Server</span>
+                                    <span class="tech-badge">MySQL</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                    <span class="tech-badge">Bootstrap 5</span>
+                                    <span class="tech-badge">jQuery</span>
+                                    <span class="tech-badge">Xampp</span>
+                                    <span class="tech-badge">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trabajo 2: Neon House Led -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card border-0 shadow-sm p-4 mb-4">
+                                <div class="d-flex justify-content-between align-items-start mb-2 flex-wrap">
+                                    <div>
+                                        <h5 class="fw-bold mb-1">Practicante de Desarrollo Web</h5>
+                                        <p class="text-primary fw-medium mb-0">Neon House Led S.A.C</p>
+                                    </div>
+                                    <span class="badge bg-secondary bg-opacity-10 text-secondary border rounded-pill px-3 py-2 mt-2 mt-sm-0">
+                                        Jun 2023 - Oct 2023
+                                    </span>
+                                </div>
+                                
+                                <ul class="text-secondary mt-3 mb-3" style="padding-left: 1.2rem;">
+                                    <li class="mb-2">Desarrollo de soluciones web utilizando PHP, JavaScript y MySQL.</li>
+                                    <li class="mb-2">Maquetación de interfaces responsivas y control de versiones con GitHub.</li>
+                                    <li>Soporte en la corrección de bugs y optimización de consultas a la base de datos.</li>
+                                </ul>
+
+                                <!-- Etiquetas de Tecnologías -->
+                                <div class="d-flex flex-wrap gap-2 mt-3">
+                                    <span class="tech-badge">PHP</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                    <span class="tech-badge">jQuery</span>
+                                    <span class="tech-badge">MySQL</span>
+                                    <span class="tech-badge">CSS</span>
+                                    <span class="tech-badge">GitHub</span>
+                                    <span class="tech-badge">Xampp</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trabajo 3: UGEL -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card border-0 shadow-sm p-4 mb-4">
+                                <div class="d-flex justify-content-between align-items-start mb-2 flex-wrap">
+                                    <div>
+                                        <h5 class="fw-bold mb-1">Practicante de Soporte Informático</h5>
+                                        <p class="text-primary fw-medium mb-0">UGEL Río Ene Mantaro</p>
+                                    </div>
+                                    <span class="badge bg-secondary bg-opacity-10 text-secondary border rounded-pill px-3 py-2 mt-2 mt-sm-0">
+                                        Abr 2022 - May 2023
+                                    </span>
+                                </div>
+                                
+                                <ul class="text-secondary mt-3 mb-3" style="padding-left: 1.2rem;">
+                                    <li class="mb-2">Soporte técnico, mantenimiento preventivo y correctivo de equipos informáticos.</li>
+                                    <li>Instalación y configuración de software.</li>
+                                </ul>
+
+                                <!-- Etiquetas de Tecnologías -->
+                                <div class="d-flex flex-wrap gap-2 mt-3">
+                                    <span class="tech-badge">Soporte TI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Educación y Certificaciones -->
+                <div class="col-lg-5">
+                    <h2 class="section-title mb-5">Educación</h2>
+                    <div class="card border-0 shadow-sm mb-4 p-3 bg-white">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-box-sm me-3"><i class="bi bi-mortarboard-fill text-primary"></i></div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Ingeniería de Sistemas Computacionales</h5>
+                                <span class="text-secondary small">Bachiller (2019 - 2024)</span>
+                                <p class="text-secondary mb-0 small mt-1">Universidad Privada del Norte (UPN)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="h5 fw-bold mb-4 mt-5">Certificaciones Destacadas</h3>
+                    <div class="cert-list">
+                        <div class="cert-item d-flex align-items-center mb-2 p-3 bg-white rounded shadow-sm">
+                            <i class="bi bi-patch-check-fill text-success fs-4 me-3"></i>
+                            <span class="text-secondary fw-medium">Desarrollo de Apps con PHP, Laravel y Postgres</span>
+                        </div>
+                        <div class="cert-item d-flex align-items-center mb-2 p-3 bg-white rounded shadow-sm">
+                            <i class="bi bi-patch-check-fill text-success fs-4 me-3"></i>
+                            <span class="text-secondary fw-medium">Data Science II: Machine Learning</span>
+                        </div>
+                        <div class="cert-item d-flex align-items-center mb-2 p-3 bg-white rounded shadow-sm">
+                            <i class="bi bi-patch-check-fill text-success fs-4 me-3"></i>
+                            <span class="text-secondary fw-medium">ISO 27001: Seguridad de la Información</span>
+                        </div>
+                        <div class="cert-item d-flex align-items-center mb-2 p-3 bg-white rounded shadow-sm">
+                            <i class="bi bi-patch-check-fill text-success fs-4 me-3"></i>
+                            <span class="text-secondary fw-medium">CCNAv7: Introduction to Networks</span>
+                        </div>
+                        <div class="cert-item d-flex align-items-center mb-2 p-3 bg-white rounded shadow-sm">
+                            <i class="bi bi-patch-check-fill text-success fs-4 me-3"></i>
+                            <span class="text-secondary fw-medium">React JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects" class="section-padding fade-in-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Proyectos Destacados</h2>
+            <div class="d-flex justify-content-center flex-wrap gap-2 mb-5" id="project-filters">
+                <button class="btn btn-primary rounded-pill px-4 filter-btn active" data-filter="all">Todos</button>
+                <button class="btn btn-outline-primary rounded-pill px-4 filter-btn" data-filter="web">Sistemas Web</button>
+                <button class="btn btn-outline-primary rounded-pill px-4 filter-btn" data-filter="data">Data Science / IA</button>
+                <button class="btn btn-outline-primary rounded-pill px-4 filter-btn" data-filter="app">Apps (Móvil/Escritorio)</button>
+            </div>
+            <div class="row g-4">
+                <!-- Proyecto 1: Intranet Académica IAL -->
+                <div class="col-md-6 project-item" data-category="web">
+                    <div class="card project-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="project-img-wrapper bg-gradient-primary d-flex align-items-center justify-content-center position-relative">
+                            <img src="assets/img/projects/intranet-ial.png" class="w-100 h-100 object-fit-cover" alt="Intranet IAL">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="platform-badge"><i class="bi bi-window-desktop"></i> Sistema Web</span>
+                            </div>
+                            <div class="d-flex gap-2 mb-3 flex-wrap">
+                                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill">Laravel 8</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill">SQL Server</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill">Bootstrap 5</span>
+                            </div>
+                            <h4 class="card-title fw-bold">Intranet Académica IAL</h4>
+                            <p class="card-text text-secondary mb-4 flex-grow-1">Plataforma web integral que centraliza la gestión académica de docentes y alumnos. Optimicé la comunicación con un nuevo sistema de mensajería y transformé la visualización de notas en un dashboard interactivo con gráficas.</p>
+                            
+                            <div class="d-flex gap-2 mt-auto">
+                                <button type="button" class="btn btn-outline-primary rounded-pill px-3 flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalProyecto1">
+                                    Ver Caso de Estudio
+                                </button>
+                                <a href="https://ialadistancia.edu.pe/intranet-v2/" target="_blank" class="btn btn-dark rounded-pill px-3" title="Ver Demo"><i class="bi bi-box-arrow-up-right me-1"></i>Ver Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 2: Sistema de Egresos -->
+                <div class="col-md-6 project-item" data-category="web">
+                    <div class="card project-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="project-img-wrapper bg-gradient-dark d-flex align-items-center justify-content-center position-relative">
+                            <img src="assets/img/projects/sistema-egresos.png" class="w-100 h-100 object-fit-cover" alt="Sistema de Egresos">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="platform-badge"><i class="bi bi-window-desktop"></i> Sistema Web</span>
+                            </div>
+                            <div class="d-flex gap-2 mb-3 flex-wrap">
+                                <span class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill">Laravel 8</span>
+                                <span class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill">SQL Server</span>
+                                <span class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill">Bootstrap 5</span>
+                            </div>
+                            <h4 class="card-title fw-bold">Sistema de Egresos</h4>
+                            <p class="card-text text-secondary mb-4 flex-grow-1">Migración completa a Laravel 8 del sistema. Elevé la seguridad encriptando contraseñas expuestas, rediseñé la visualización de datos, implementación de la exportación de reportes a PDF e integración con SUNAT.</p>
+                            <div class="d-flex gap-2 mt-auto">
+                                <button type="button" class="btn btn-outline-success rounded-pill px-3 flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalProyecto2">
+                                    Ver Caso de Estudio
+                                </button>
+                                <a href="https://ialadistancia.edu.pe/egresos/" target="_blank" class="btn btn-dark rounded-pill px-3 ms-2"><i class="bi bi-box-arrow-up-right me-1"></i> Ver Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: Data Science - Accidentes -->
+                <div class="col-md-6 project-item" data-category="data">
+                    <div class="card project-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="project-img-wrapper bg-gradient-info d-flex align-items-center justify-content-center position-relative">
+                            <img src="assets/img/projects/ds-accidentes.png" class="w-100 h-100 object-fit-cover" alt="Análisis de Accidentes">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="platform-badge" style="border-color: #0dcaf0; color: #0dcaf0;"><i class="bi bi-graph-up-arrow"></i> Data Science</span>
+                            </div>
+                            <div class="d-flex gap-2 mb-3 flex-wrap">
+                                <span class="badge bg-info bg-opacity-10 text-info px-3 py-2 rounded-pill">Python</span>
+                                <span class="badge bg-info bg-opacity-10 text-info px-3 py-2 rounded-pill">Pandas</span>
+                                <span class="badge bg-info bg-opacity-10 text-info px-3 py-2 rounded-pill">Scikit-Learn</span>
+                            </div>
+                            <h4 class="card-title fw-bold">Análisis y Predicción de Accidentes</h4>
+                            <p class="card-text text-secondary mb-4 flex-grow-1">Análisis exploratorio y modelo predictivo para identificar patrones de riesgo en accidentes de tránsito. Evaluación de 4 algoritmos de Machine Learning para predecir la gravedad de las lesiones.</p>
+                            
+                            <div class="d-flex gap-2 mt-auto">
+                                <button type="button" class="btn btn-outline-info rounded-pill px-3 flex-grow-1 text-dark" data-bs-toggle="modal" data-bs-target="#modalProyecto3">
+                                    Ver Caso de Estudio
+                                </button>
+                                <a href="https://colab.research.google.com/drive/1Az0ol2JpCPcVYCGf6Pvhvzrlk54gHTwJ?usp=sharing" target="_blank" class="btn btn-dark rounded-pill px-3" title="Ver en Colab"><i class="bi bi-google me-1"></i> Colab</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4: NLP - Análisis de Sentimientos -->
+                <div class="col-md-6 project-item" data-category="data">
+                    <div class="card project-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="project-img-wrapper d-flex align-items-center justify-content-center position-relative" style="background: linear-gradient(135deg, #8b5cf6, #3b82f6);">
+                            <img src="assets/img/projects/nlp-wordcloud.png" class="w-100 h-100 object-fit-cover" alt="Análisis de Sentimientos NLP">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="platform-badge" style="border-color: #8b5cf6; color: #8b5cf6;"><i class="bi bi-robot"></i> Inteligencia Artificial</span>
+                            </div>
+                            <div class="d-flex gap-2 mb-3 flex-wrap">
+                                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill">Python</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill">NLTK</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill">TF-IDF</span>
+                            </div>
+                            <h4 class="card-title fw-bold">Análisis de Sentimientos en Twitter</h4>
+                            <p class="card-text text-secondary mb-4 flex-grow-1">Modelo de NLP para clasificar el tono (Positivo, Negativo, Neutral) de miles de tweets sobre marcas de tecnología. Permite a las empresas monitorear su reputación.</p>
+                            
+                            <div class="d-flex gap-2 mt-auto">
+                                <button type="button" class="btn btn-outline-primary rounded-pill px-3 flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalProyecto4">
+                                    Ver Caso de Estudio
+                                </button>
+                                <a href="https://colab.research.google.com/drive/12YTjN3jbjdoGztGYWi04WmQDbWsh6Cn1?usp=sharing" target="_blank" class="btn btn-dark rounded-pill px-3" title="Ver en Colab"><i class="bi bi-google me-1"></i> Colab</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5: BeBranding (WordPress) -->
+                <div class="col-md-6 project-item" data-category="web">
+                    <div class="card project-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="project-img-wrapper d-flex align-items-center justify-content-center position-relative" style="background: linear-gradient(135deg, #f59e0b, #ec4899);">
+                            <img src="assets/img/projects/wp-bebranding.png" class="w-100 h-100 object-fit-cover" alt="BeBranding WordPress">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="platform-badge" style="border-color: #f59e0b; color: #f59e0b;"><i class="bi bi-wordpress"></i> Página Web</span>
+                            </div>
+                            <div class="d-flex gap-2 mb-3 flex-wrap">
+                                <span class="badge bg-warning bg-opacity-10 text-dark px-3 py-2 rounded-pill">WordPress</span>
+                                <span class="badge bg-warning bg-opacity-10 text-dark px-3 py-2 rounded-pill">Elementor</span>
+                            </div>
+                            <h4 class="card-title fw-bold">BeBranding</h4>
+                            <p class="card-text text-secondary mb-4 flex-grow-1">Desarrollo de sitio web en WordPress. Implementación de diseño responsivo, optimización de velocidad con caché, compresión de imágenes y personalización de temas.</p>
+                            
+                            <div class="d-flex gap-2 mt-auto">
+                                <button type="button" class="btn btn-outline-dark rounded-pill px-3 flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalProyecto5">
+                                    Ver Caso de Estudio
+                                </button>
+                                <a href="https://drive.google.com/file/d/1NWGXLAM1FbrtEdzhGLZn6KT3nwqYvjTO/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-warning text-dark rounded-pill px-3" title="Ver Galería Completa en Drive">
+                                    <i class="bi bi-google"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6: Organix (Java Desktop) -->
+                <div class="col-md-6 project-item" data-category="app">
+                    <div class="card project-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="project-img-wrapper d-flex align-items-center justify-content-center position-relative" style="background: linear-gradient(135deg, #059669, #10b981);">
+                            <img src="assets/img/projects/organix-login.png" class="w-100 h-100 object-fit-cover" alt="Organix Java Desktop">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="platform-badge" style="border-color: #10b981; color: #10b981;"><i class="bi bi-pc-display"></i> App de Escritorio</span>
+                            </div>
+                            <div class="d-flex gap-2 mb-3 flex-wrap">
+                                <span class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill">Java</span>
+                                <span class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill">MySQL</span>
+                            </div>
+                            <h4 class="card-title fw-bold">Organix - Sistema Agrícola</h4>
+                            <p class="card-text text-secondary mb-4 flex-grow-1">Aplicación de escritorio desarrollada en Java para la gestión de reservas, control de stock y facturación en una empresa agrícola. Implementa arquitectura MVC, DAO y gestión de roles.</p>
+                            
+                            <div class="d-flex gap-2 mt-auto">
+                                <button type="button" class="btn btn-outline-success rounded-pill px-3 flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalProyecto6">
+                                    Ver Caso de Estudio
+                                </button>
+                                <a href="https://github.com/VegettoJesus/Organix-Sistema-Agricola" target="_blank" class="btn btn-dark rounded-pill px-3" title="Ver Código en GitHub"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 7: E-Commerce Laravel -->
+                <div class="col-md-6 project-item" data-category="web">
+                    <div class="card project-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="project-img-wrapper d-flex align-items-center justify-content-center position-relative" style="background: linear-gradient(135deg, #1e293b, #0f172a);">
+                            <img src="assets/img/projects/ecommerce-home.png" class="w-100 h-100 object-fit-cover" alt="E-Commerce Laravel">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="platform-badge" style="border-color: #ef4444; color: #ef4444;"><i class="bi bi-cart"></i> E-Commerce Web</span>
+                            </div>
+                            <div class="d-flex gap-2 mb-3 flex-wrap">
+                                <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-2 rounded-pill">Laravel 8</span>
+                                <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-2 rounded-pill">MySQL</span>
+                                <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-2 rounded-pill">jQuery</span>
+                            </div>
+                            <h4 class="card-title fw-bold">E-Commerce Platform & Admin Panel</h4>
+                            <p class="card-text text-secondary mb-4 flex-grow-1">Plataforma de comercio electrónico completa con gestión de inventario avanzada. Incluye panel administrativo con permisos dinámicos, carrito con reserva de stock, pasarelas de pago y auditoría.</p>
+                            
+                            <div class="d-flex gap-2 mt-auto">
+                                <button type="button" class="btn btn-outline-danger rounded-pill px-3 flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalProyecto7">
+                                    Ver Caso de Estudio
+                                </button>
+                                <a href="https://github.com/VegettoJesus/pedidos_productos" target="_blank" class="btn btn-dark rounded-pill px-3" title="Ver Código en GitHub"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 8: Control de Presión (App Móvil) -->
+                <div class="col-md-6 project-item" data-category="app">
+                    <div class="card project-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="project-img-wrapper d-flex align-items-center justify-content-center position-relative" style="background: linear-gradient(135deg, #0284c7, #06b6d4);">
+                            <img src="assets/img/projects/presion-login.png" class="w-100 h-100 object-fit-cover" alt="Aplicación móvil Control de Presión Arterial">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="platform-badge" style="border-color: #06b6d4; color: #06b6d4;"><i class="bi bi-phone"></i> App Móvil</span>
+                            </div>
+                            <div class="d-flex gap-2 mb-3 flex-wrap">
+                                <span class="badge bg-info bg-opacity-10 text-info px-3 py-2 rounded-pill">React Native</span>
+                                <span class="badge bg-info bg-opacity-10 text-info px-3 py-2 rounded-pill">Node.js</span>
+                                <span class="badge bg-info bg-opacity-10 text-info px-3 py-2 rounded-pill">MySQL</span>
+                            </div>
+                            <h4 class="card-title fw-bold">Control de Presión Arterial</h4>
+                            <p class="card-text text-secondary mb-4 flex-grow-1">Aplicación móvil Full-Stack para el monitoreo de salud. Permite registrar mediciones, visualizar gráficos de evolución y exportar reportes médicos en PDF/Excel.</p>
+                            
+                            <div class="d-flex gap-2 mt-auto">
+                                <button type="button" class="btn btn-outline-info rounded-pill px-3 flex-grow-1 text-dark" data-bs-toggle="modal" data-bs-target="#modalProyecto8">
+                                    Ver Caso de Estudio
+                                </button>
+                                <a href="" target="_blank" class="btn btn-dark rounded-pill px-3" title="Ver Código en GitHub"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 9: Blog Personal Vegetto.Jesus -->
+                <div class="col-md-6 project-item" data-category="web">
+                    <div class="card project-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="project-img-wrapper d-flex align-items-center justify-content-center position-relative" style="background: linear-gradient(135deg, #ea580c, #ef4444);">
+                            <img src="assets/img/projects/blog-vegetto-home.png" class="w-100 h-100 object-fit-cover" alt="Blog Vegetto.Jesus">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="platform-badge" style="border-color: #ea580c; color: #ea580c;"><i class="bi bi-journal-richtext"></i> Página Web / Blog</span>
+                            </div>
+                            <div class="d-flex gap-2 mb-3 flex-wrap">
+                                <span class="badge bg-warning bg-opacity-10 text-dark px-3 py-2 rounded-pill">HTML5</span>
+                                <span class="badge bg-warning bg-opacity-10 text-dark px-3 py-2 rounded-pill">CSS</span>
+                                <span class="badge bg-warning bg-opacity-10 text-dark px-3 py-2 rounded-pill">Bootstrap 5</span>
+                                <span class="badge bg-warning bg-opacity-10 text-dark px-3 py-2 rounded-pill">SCSS</span>
+                            </div>
+                            <h4 class="card-title fw-bold">Blog Personal - Vegetto.Jesus</h4>
+                            <p class="card-text text-secondary mb-4 flex-grow-1">Sitio web multipágina para la comunidad de mods de DBZ BT3. Incluye galería de personajes, tutoriales, sección de noticias y enlaces a redes sociales, con un diseño responsivo.</p>
+                            
+                            <div class="d-flex gap-2 mt-auto">
+                                <a href="https://vegettojesus.github.io/Mi_Pagina_Web_VegettoJesus-Leon_Angulo/" target="_blank" class="btn btn-outline-dark rounded-pill px-3 flex-grow-1">
+                                    <i class="bi bi-box-arrow-up-right me-1"></i> Visitar Sitio
+                                </a>
+                                <a href="https://github.com/VegettoJesus/Mi_Pagina_Web_VegettoJesus-Leon_Angulo" target="_blank" class="btn btn-dark rounded-pill px-3" title="Ver Código en GitHub"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center mt-5" id="pagination-container"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-dark text-white position-relative overflow-hidden">
+        <div class="contact-bg-shape"></div>
+        <div class="container text-center position-relative z-1">
+            <h2 class="display-5 fw-bold mb-4">¿Trabajamos juntos?</h2>
+            <p class="lead mb-5 text-light opacity-75 mx-auto" style="max-width: 600px;">Estoy disponible para nuevos desafíos profesionales. Si tienes un proyecto en mente o quieres que forme parte de tu equipo, no dudes en contactarme.</p>
+            
+            <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+                <a href="mailto:jesusleonangulo@hotmail.com" class="btn btn-primary btn-lg rounded-pill px-5 shadow"><i class="bi bi-envelope me-2"></i>Enviar Correo</a>
+                <a href="https://github.com/VegettoJesus" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-5"><i class="bi bi-github me-2"></i>GitHub</a>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3 mt-4">
+                <span class="fs-5 fw-medium text-light bg-white bg-opacity-10 px-4 py-2 rounded-pill" style="user-select: all;">
+                    jesusleonangulo@hotmail.com
+                </span>
+                <button id="copyEmailBtn" class="btn btn-outline-info rounded-pill px-4 py-2 d-flex align-items-center">
+                    <i class="bi bi-clipboard me-2" id="copyIcon"></i>
+                    <span id="copyText">Copiar correo</span>
+                </button>
+            </div>
+
+            <hr class="border-secondary opacity-25 my-5">
+            <p class="text-secondary small mb-0">&copy; 2026 Christian Jesus Leon Angulo.</p>
+        </div>
+    </section>
+
+    <div id="modals-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

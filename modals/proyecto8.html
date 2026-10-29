@@ -1,0 +1,75 @@
+<!-- Modal: Caso de Estudio Proyecto 8 (App de Presión) -->
+<div class="modal fade" id="modalProyecto8" tabindex="-1" aria-labelledby="modalProyecto8Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg">
+            
+            <div class="modal-header text-white border-0 py-3" style="background: linear-gradient(135deg, #0284c7, #06b6d4);">
+                <div>
+                    <h5 class="modal-title fw-bold mb-1" id="modalProyecto8Label">Control de Presión Arterial</h5>
+                    <small class="text-white opacity-75">React Native · Node.js · Express · MySQL · Docker</small>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body p-4">
+    
+                <div class="mb-5">
+                    <h5 class="fw-bold text-dark mb-3"><i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>El Reto</h5>
+                    <p class="text-secondary mb-3">Desarrollar una aplicación móvil Full-Stack para el monitoreo de salud, dirigida a pacientes con hipertensión. El sistema debía ser capaz de:</p>
+                    <ul class="text-secondary">
+                        <li><strong>Registro Clínico:</strong> Almacenar presión sistólica, diastólica, pulso y hábitos (café, estrés) para encontrar patrones.</li>
+                        <li><strong>Visualización de Datos:</strong> Gráficos interactivos de evolución y clasificación automática de riesgo (Normal, Elevada, Crisis).</li>
+                        <li><strong>Reportes Médicos:</strong> Exportar el historial a PDF y Excel para compartir con el doctor.</li>
+                        <li><strong>Seguridad:</strong> Autenticación segura y privacidad de los datos del paciente.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-5">
+                    <h5 class="fw-bold text-dark mb-3"><i class="bi bi-lightbulb-fill text-warning me-2"></i>La Solución</h5>
+                    <p class="text-secondary mb-3">Construí una arquitectura Cliente-Servidor separando el frontend móvil (React Native) del backend API (Node.js), comunicados mediante JWT.</p>
+                    
+                    <div class="mb-4 text-center">
+                        <img src="assets/img/projects/presion-app-completa.png" class="img-fluid w-100 rounded shadow-sm border" alt="Interfaces de la App de Presión Arterial">
+                        <p class="text-muted small mt-2 mb-0">Vistas principales: Historial con gráficos, Registro de medición y Dashboard del paciente.</p>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded h-100">
+                                <h6 class="fw-bold text-info mb-2"><i class="bi bi-phone me-2"></i>Frontend (React Native)</h6>
+                                <p class="small text-secondary mb-0">Interfaz moderna con Expo Router, gráficos dinámicos con <code>react-native-chart-kit</code> y almacenamiento seguro de tokens con <code>expo-secure-store</code>.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded h-100">
+                                <h6 class="fw-bold text-info mb-2"><i class="bi bi-server me-2"></i>Backend (Node.js)</h6>
+                                <p class="small text-secondary mb-0">API REST con Express, validaciones con Zod, autenticación JWT y contraseñas encriptadas con Bcrypt. Consultas SQL puras optimizadas.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded h-100">
+                                <h6 class="fw-bold text-info mb-2"><i class="bi bi-file-earmark-pdf me-2"></i>Reportes PDF/Excel</h6>
+                                <p class="small text-secondary mb-0">El backend genera los documentos con <code>PDFKit</code> y <code>ExcelJS</code>, y el móvil los descarga usando <code>expo-file-system</code> y <code>expo-sharing</code>.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded h-100">
+                                <h6 class="fw-bold text-info mb-2"><i class="bi bi-database-check me-2"></i>Lógica Médica SQL</h6>
+                                <p class="small text-secondary mb-0">Implementación de CTEs (Common Table Expressions) recursivas para generar fechas continuas en los gráficos, incluso si no hubo mediciones ese día.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-footer border-0 bg-light justify-content-between flex-column flex-sm-row gap-2">
+                <span class="small text-muted d-none d-sm-block"></span>
+                <div>
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-3 mb-0" data-bs-dismiss="modal">Cerrar</button>
+                    
+                    <a href="" target="_blank" class="btn btn-dark rounded-pill px-3 ms-2 mb-0"><i class="bi bi-github me-1"></i> Ver Código</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

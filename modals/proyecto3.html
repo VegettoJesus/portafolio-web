@@ -1,0 +1,66 @@
+<!-- Modal: Caso de Estudio Proyecto 3 -->
+<div class="modal fade" id="modalProyecto3" tabindex="-1" aria-labelledby="modalProyecto3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg">
+            
+            <div class="modal-header bg-info text-dark border-0 py-3">
+                <div>
+                    <h5 class="modal-title fw-bold mb-1" id="modalProyecto3Label">Análisis de Accidentes de Tránsito</h5>
+                    <small class="opacity-75">Python · Pandas · Scikit-Learn · Google Colab</small>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body p-4">
+    
+                <div class="mb-5">
+                    <h5 class="fw-bold text-dark mb-3"><i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>El Reto</h5>
+                    <p class="text-secondary mb-3">El aumento de accidentes de tránsito representa un desafío para aseguradoras y autoridades. Los datos históricos existían, pero no se estaban aprovechando para entender los patrones de riesgo:</p>
+                    <ul class="text-secondary">
+                        <li><strong>Desconocimiento de causas:</strong> No estaba claro qué tipo de colisión o clima era el más frecuente.</li>
+                        <li><strong>Pérdida de información:</strong> El dataset contenía múltiples valores nulos que debían ser tratados para no sesgar el análisis.</li>
+                        <li><strong>Falta de capacidad predictiva:</strong> No había un modelo que permitiera alertar sobre posibles lesiones graves.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-5">
+                    <h5 class="fw-bold text-dark mb-3"><i class="bi bi-lightbulb-fill text-warning me-2"></i>La Solución</h5>
+                    <p class="text-secondary mb-3">Realicé un ciclo completo de Ciencia de Datos: desde la limpieza y el análisis exploratorio (EDA) hasta el entrenamiento y evaluación de modelos predictivos.</p>
+                    
+                    <div class="mb-4 text-center">
+                        <img src="assets/img/projects/eda-clima.png" class="img-fluid w-100 rounded shadow-sm border" alt="Análisis Exploratorio de Clima">
+                        <p class="text-muted small mt-2 mb-0">Distribución de accidentes según el clima (EDA)</p>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded h-100">
+                                <h6 class="fw-bold text-info mb-2"><i class="bi bi-bar-chart-fill me-2"></i>Análisis Exploratorio (EDA)</h6>
+                                <p class="small text-secondary mb-0">Utilicé Pandas, Matplotlib y Seaborn para identificar patrones. Descubrí que el 81% de los accidentes ocurren con clima despejado y el choque más común es "Same Dir Rear End" (alcance).</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded h-100">
+                                <h6 class="fw-bold text-info mb-2"><i class="bi bi-robot me-2"></i>Machine Learning</h6>
+                                <p class="small text-secondary mb-0">Entrené y comparé 4 modelos (SVC, Random Forest, KNN y Regresión Logística) usando Scikit-Learn para predecir si un accidente resultaría en lesiones.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-4 text-center">
+                        <img src="assets/img/projects/ml-roc.png" class="img-fluid w-100 rounded shadow-sm border" alt="Curva ROC">
+                        <p class="text-muted small mt-2 mb-0">Comparación de modelos mediante Curva ROC</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-footer border-0 bg-light justify-content-between">
+                <span class="small text-muted d-none d-sm-block"></span>
+                <div>
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-3" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="https://colab.research.google.com/drive/1Az0ol2JpCPcVYCGf6Pvhvzrlk54gHTwJ?usp=sharing" target="_blank" class="btn btn-info text-dark rounded-pill px-3 ms-2"><i class="bi bi-google me-1"></i> Abrir Notebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+<!-- Modal: Caso de Estudio Proyecto 2 -->
+<div class="modal fade" id="modalProyecto2" tabindex="-1" aria-labelledby="modalProyecto2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg">
+            
+            <div class="modal-header bg-success text-white border-0 py-3">
+                <div>
+                    <h5 class="modal-title fw-bold mb-1" id="modalProyecto2Label">Sistema de Egresos</h5>
+                    <small class="text-white opacity-75">Laravel 8 · SQL Server · Bootstrap 5 · jQuery</small>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body p-4">
+    
+                <div class="mb-5">
+                    <h5 class="fw-bold text-dark mb-3"><i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>El Reto</h5>
+                    <p class="text-secondary mb-3">El área administrativa y financiera del instituto contaba con un sistema antiguo que funcionaba, pero presentaba graves fallas de seguridad y una experiencia de usuario muy pobre:</p>
+                    <ul class="text-secondary">
+                        <li><strong>Seguridad crítica:</strong> El login era sumamente básico y las contraseñas en la base de datos se guardaban en texto plano (visibles para cualquiera con acceso al servidor).</li>
+                        <li><strong>Reportes visualmente pobres:</strong> Los reportes existían, pero se mostraban como HTML crudo sin CSS (tablas amontonadas, difíciles de leer). Además, no había forma de exportarlos a un documento formal.</li>
+                        <li><strong>Mala visualización de datos:</strong> Aunque el sistema ya hacía cálculos financieros, la información se mostraba de forma desordenada, dificultando la navegación y el análisis rápido.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-5">
+                    <h5 class="fw-bold text-dark mb-3"><i class="bi bi-lightbulb-fill text-warning me-2"></i>La Solución</h5>
+                    <p class="text-secondary mb-3">Realicé la <strong>migración completa del sistema a Laravel 8</strong>, modernizando toda su arquitectura. Durante este proceso, no solo trasladé la funcionalidad existente, sino que resolví graves fallas de seguridad y elevé la calidad visual y documental:</p>
+                    
+                    <div class="mb-4 text-center">
+                        <img src="assets/img/projects/tabla-egresos.webp" class="d-block w-100 modal-img rounded shadow-sm border" alt="Módulo de Egresos - Orden de Servicios">
+                        <p class="text-muted small mt-2 mb-0">Vista del módulo de Órdenes de Servicio con filtros avanzados y DataTables</p>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded h-100">
+                                <h6 class="fw-bold text-success mb-2"><i class="bi bi-file-pdf-fill me-2"></i>Generación de PDFs</h6>
+                                <p class="small text-secondary mb-0">Implementé <em>DomPDF</em> para exportar los reportes que antes solo eran HTML sin formato, dándoles un diseño corporativo listo para imprimir.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded h-100">
+                                <h6 class="fw-bold text-success mb-2"><i class="bi bi-table me-2"></i>Mejora Visual</h6>
+                                <p class="small text-secondary mb-0">Transformé tablas planas en DataTables con búsqueda, paginación, tooltips de ayuda y scroll horizontal sincronizado.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded h-100">
+                                <h6 class="fw-bold text-success mb-2"><i class="bi bi-cloud-check me-2"></i>Validación SUNAT</h6>
+                                <p class="small text-secondary mb-0">Integré el consumo de una API externa para autocompletar RUC y Razón Social de proveedores en el formulario.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-footer border-0 bg-light justify-content-between">
+                <span class="small text-muted d-none d-sm-block"></span>
+                <div>
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-3" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="https://ialadistancia.edu.pe/egresos/" target="_blank" class="btn btn-dark rounded-pill px-3 ms-2">Ver Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+
+node_modules/
+
+dist/
+build/
+.cache/
+.sass-cache/
+
+.env
+.env.local
+
+.DS_Store
+Thumbs.db
+
+*.log
+npm-debug.log*
+
+# Editores
+.vscode/
+.idea/
